@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Breast Cancer Survival Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="body">
+    <div class="input-container">
+        <h1 class="h1">Breast Cancer Survival Prediction</h1>
+
+        <form class="container" method="POST" action="/predict">
+            <!-- Add input fields for your features -->
+             <div class="formbold-mb-6">
+                <label class="formbold-form-label" for="model">Model</label><br>
+                <select class="formbold-form-input" id="model" name="model">
+                    <option value=""></option>
+                    <option value="ann">Artificial Neural Network</option>
+                    <option value="decision">Decision Tree Regressor</option>
+                    <option value="random">Random Forest</option>
+                    <option value="logistic">Logistic Regression</option>
+                </select>
+            </div>
+          <div class="formbold-mb-6">
+            <label class="formbold-form-label" for="Age">Age</label>
+            <input class="formbold-form-input" type="text" id="Age" name="Age" required><br>
+
+            <div class="formbold-mb-6">
+                <label class="formbold-form-label" for="TStage">T Stage</label><br>
+                <select class="formbold-form-input" id="TStage" name="T Stage">
+                    <option value=""></option>
+                    <option value="1">T1</option>
+                    <option value="2">T2</option>
+                    <option value="3">T3</option>
+                    <option value="4">T4</option>
+                </select>
+            </div>
+
+            <div class="formbold-mb-6">
+                <label class="formbold-form-label" for="NStage">N Stage</label><br>
+                <select class="formbold-form-input" id="NStage" name="N Stage">
+                    <option value=""></option>
+                    <option value="1">N1</option>
+                    <option value="2">N2</option>
+                    <option value="3">N3</option>
+                </select>
+            </div>
+
+            <div class="formbold-mb-6">
+                <label class="formbold-form-label" for="Stage6th">6th Stage</label><br>
+                <select class="formbold-form-input" id="Stage6th" name="6th Stage">
+                    <option value=""></option>
+                    <option value="1">IIA</option>
+                    <option value="3">IIIA</option>
+                    <option value="2">IIB</option>
+                    <option value="4">IIIB</option>
+                    <option value="5">IIIC</option>
+                </select>
+            </div>
+
+            <div class="formbold-mb-6">
+                <label class="formbold-form-label" for="Differentiate">Differentiate</label><br>
+                <select class="formbold-form-input" id="Differentiate" name="differentiate">
+                    <option value=""></option>
+                    <option value="2">Moderately differentiated</option>
+                    <option value="1">Poorly differentiated</option>
+                    <option value="3">Well differentiated</option>
+                    <option value="0">Undifferentiated</option>
+                </select>
+            </div>
+
+            <div class="formbold-mb-6">
+                <label class="formbold-form-label" for="Grade">Grade</label><br>
+                <select class="formbold-form-input" id="Grade" name="Grade">
+                    <option value=""></option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                </select>
+            </div>
+
+            <div class="formbold-mb-6">
+                <label class="formbold-form-label" for="AStage">A Stage</label><br>
+                <select class="formbold-form-input" id="AStage" name="A Stage">
+                    <option value=""></option>
+                    <option value="1">Regional</option>
+                    <option value="0">Distant</option>
+                </select>
+            </div>
+
+          <div class="formbold-mb-6">
+            <label class="formbold-form-label" for="Tumor Size">Tumor Size</label>
+            <input class="formbold-form-input" type="text" id="Tumor Size" name="Tumor Size" required><br>
+          </div>
+              <div class="formbold-mb-6">
+            <label class="formbold-form-label" for="EstrogenStatus">Estrogen Status</label><br>
+            <select class="formbold-form-input" id="EstrogenStatus" name="Estrogen Status">
+                <option value=""></option>
+                <option value="1">Positive</option>
+                <option value="0">Negative</option>
+            </select>
+              </div>
+
+            <div class="formbold-mb-6">
+                <label class="formbold-form-label" for="ProgesteroneStatus">Progesterone Status</label><br>
+                <select class="formbold-form-input" id="ProgesteroneStatus" name="Progesterone Status">
+                    <option value=""></option>
+                    <option value="1">Positive</option>
+                    <option value="0">Negative</option>
+                </select>
+            </div>
+
+
+          <div class="formbold-mb-6">
+            <label class="formbold-form-label" for="Regional Node Examined">Regional Node Examined</label>
+            <input class="formbold-form-input" type="text" id="Regional Node Examined" name="Regional Node Examined" required><br>
+          </div>
+          <div class="formbold-mb-6">
+            <label class="formbold-form-label" for="Reginol Node Positive">Regional Node Positive</label>
+            <input class="formbold-form-input" type="text" id="Reginol Node Positive" name="Reginol Node Positive" required><br>
+          </div>
+          <div class="formbold-mb-6">
+            <label class="formbold-form-label" for="Survival Months">Survival Months</label>
+            <input class="formbold-form-input" type="text" id="Survival Months" name="Survival Months" required><br>
+          </div>
+            <button class="button" type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>

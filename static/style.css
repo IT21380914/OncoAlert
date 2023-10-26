@@ -1,0 +1,194 @@
+
+/* style.css */
+
+/* Body Styles */
+.body {
+    font-family: Arial, sans-serif;
+    background-image: url('images/background.jpg'); /* Set the background image path */
+    background-size: cover; /* Cover the entire background */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-attachment: fixed; /* Fix the background image */
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    /*text-align: center;*/
+}
+
+/* Container Styles */
+.container {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgba(255, 182, 193, 0.33);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Header Styles */
+h1 {
+    background: url('logo.png') left center no-repeat;
+    padding-left: 40px;
+    background-size: auto 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin:0px
+
+}
+
+/* Label Styles */
+label {
+    display: block;
+    /*font-weight: bold;*/
+    margin-top: 10px;
+}
+
+/* Input Styles */
+input[type="text"] {
+    width: 97%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Radio Button Styles */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Button Styles */
+button {
+    background-color: rgb(12, 12, 12);
+    color: #ffffff;
+    /*padding: 10px 20px;*/
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    padding: 14px 25px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+/* Button Hover Styles */
+button:hover {
+    background-color: lightpink;
+}
+.formbold-form-input {
+    width: 100%;
+    padding: 13px 22px;
+    border-radius: 5px;
+    border: 1px solid #dde3ec;
+    background: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    color: #536387;
+    outline: none;
+    resize: none;
+
+  }
+.formbold-form-label {
+    color: #07074d;
+    font-size: 20px;
+    line-height: 24px;
+    display: block;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+
+
+.formbold-mb-6 {
+    margin-bottom: 30px;
+    font-family: Arial, sans-serif;
+
+  }
+
+
+.formbold-btn:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+
+/* style.css */
+
+/* Apply styles to the entire body */
+/*.body {*/
+/*    font-family: Arial, sans-serif;*/
+/*    background-color: #f0f0f0;*/
+/*    text-align: center;*/
+/*}*/
+/* Result Page Body Styles */
+.body_res {
+    font-family: Arial, sans-serif;
+    background-image: url('images/result-background.gif'); /* Set the background image path */
+    background-size: cover; /* Cover the entire background */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-attachment: fixed; /* Fix the background image */
+    margin: 0;
+    padding: 0;
+}
+/* Style the container for result elements */
+.result-container {
+    background-image: url('images/result-background.gif');
+        background-size: cover; /* Cover the entire container */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-attachment: fixed; /* Fix the background image */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 50px auto;
+    max-width: 550px;
+    align-items: center;
+}
+
+/* Style the title */
+.result-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+/* Style the prediction text */
+.prediction-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+/* Style the back button */
+.back-button {
+    display: inline-block;
+    margin: 10px 20px 0px 120px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    align-items: center;
+
+    background-color: rgb(12, 12, 12);
+    color: #ffffff;
+    /*padding: 10px 20px;*/
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    width: 50%;
+    padding: 14px 25px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.back-button:hover {
+    background-color: lightpink;
+}
+
+.logo{
+height:20px;
+width:20px;
+}
